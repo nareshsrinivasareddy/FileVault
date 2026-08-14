@@ -1,9 +1,14 @@
 {
-  "openapi": "3.0.4",
+  "openapi": "3.1.1",
   "info": {
-    "title": "FileVault.Api",
-    "version": "1.0"
+    "title": "FileVault.Api | v1",
+    "version": "1.0.0"
   },
+  "servers": [
+    {
+      "url": "http://localhost:5132"
+    }
+  ],
   "paths": {
     "/": {
       "get": {
@@ -34,18 +39,13 @@
                 "type": "object",
                 "properties": {
                   "file": {
-                    "type": "string",
-                    "format": "binary"
+                    "$ref": "#/components/schemas/IFormFile"
                   }
-                }
-              },
-              "encoding": {
-                "file": {
-                  "style": "form"
                 }
               }
             }
-          }
+          },
+          "required": true
         },
         "responses": {
           "200": {
@@ -55,7 +55,14 @@
       }
     }
   },
-  "components": { },
+  "components": {
+    "schemas": {
+      "IFormFile": {
+        "type": "string",
+        "format": "binary"
+      }
+    }
+  },
   "tags": [
     {
       "name": "FileVault.Api"

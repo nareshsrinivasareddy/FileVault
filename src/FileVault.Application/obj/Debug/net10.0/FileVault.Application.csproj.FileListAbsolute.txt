@@ -13,3 +13,4 @@ C:\Naresh\Professional\Code\FileVault\src\FileVault.Application\obj\Debug\net10.
 C:\Naresh\Professional\Code\FileVault\src\FileVault.Application\obj\Debug\net10.0\refint\FileVault.Application.dll
 C:\Naresh\Professional\Code\FileVault\src\FileVault.Application\obj\Debug\net10.0\FileVault.Application.pdb
 C:\Naresh\Professional\Code\FileVault\src\FileVault.Application\obj\Debug\net10.0\ref\FileVault.Application.dll
+C:\Naresh\Professional\Code\FileVault\src\FileVault.Application\obj\Debug\net10.0\FileVault.Application.sourcelink.json

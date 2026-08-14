@@ -15,3 +15,4 @@ C:\Naresh\Professional\Code\FileVault\src\FileVault.Infrastructure\obj\Debug\net
 C:\Naresh\Professional\Code\FileVault\src\FileVault.Infrastructure\obj\Debug\net10.0\refint\FileVault.Infrastructure.dll
 C:\Naresh\Professional\Code\FileVault\src\FileVault.Infrastructure\obj\Debug\net10.0\FileVault.Infrastructure.pdb
 C:\Naresh\Professional\Code\FileVault\src\FileVault.Infrastructure\obj\Debug\net10.0\ref\FileVault.Infrastructure.dll
+C:\Naresh\Professional\Code\FileVault\src\FileVault.Infrastructure\obj\Debug\net10.0\FileVault.Infrastructure.sourcelink.json
