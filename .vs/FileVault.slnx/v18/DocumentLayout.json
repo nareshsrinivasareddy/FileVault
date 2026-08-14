@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Naresh\\Professional\\Code\\FileVault\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EA7D6AFA-5C33-E984-8E60-2D16F2F7A748}|src\\FileVault.Api\\FileVault.Api.csproj|c:\\naresh\\professional\\code\\filevault\\src\\filevault.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA7D6AFA-5C33-E984-8E60-2D16F2F7A748}|src\\FileVault.Api\\FileVault.Api.csproj|solutionrelative:src\\filevault.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77A0E9A6-BFBB-482F-2254-8C1D4EC947A0}|src\\FileVault.Application\\FileVault.Application.csproj|c:\\naresh\\professional\\code\\filevault\\src\\filevault.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77A0E9A6-BFBB-482F-2254-8C1D4EC947A0}|src\\FileVault.Application\\FileVault.Application.csproj|solutionrelative:src\\filevault.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA7D6AFA-5C33-E984-8E60-2D16F2F7A748}|src\\FileVault.Api\\FileVault.Api.csproj|c:\\naresh\\professional\\code\\filevault\\src\\filevault.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EA7D6AFA-5C33-E984-8E60-2D16F2F7A748}|src\\FileVault.Api\\FileVault.Api.csproj|solutionrelative:src\\filevault.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Naresh\\Professional\\Code\\FileVault\\src\\FileVault.Application\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "src\\FileVault.Application\\DependencyInjection.cs",
+              "ToolTip": "C:\\Naresh\\Professional\\Code\\FileVault\\src\\FileVault.Application\\DependencyInjection.cs",
+              "RelativeToolTip": "src\\FileVault.Application\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-13T20:47:30.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Naresh\\Professional\\Code\\FileVault\\src\\FileVault.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\FileVault.Api\\appsettings.json",
+              "ToolTip": "C:\\Naresh\\Professional\\Code\\FileVault\\src\\FileVault.Api\\appsettings.json",
+              "RelativeToolTip": "src\\FileVault.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-13T20:43:04.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Naresh\\Professional\\Code\\FileVault\\src\\FileVault.Api\\Program.cs",
+              "RelativeDocumentMoniker": "src\\FileVault.Api\\Program.cs",
+              "ToolTip": "C:\\Naresh\\Professional\\Code\\FileVault\\src\\FileVault.Api\\Program.cs",
+              "RelativeToolTip": "src\\FileVault.Api\\Program.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAwwBIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-13T20:35:55.615Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
