@@ -22,7 +22,7 @@ public static class DocumentsEndpoint
                 file.ContentType,
                 file.Length,
                 stream,
-                FileVault.Domain.Enums.StorageProviderType.AzureBlob);
+                Domain.Enums.StorageProviderType.AzureBlob);
 
             var result = await sender.Send(command, cancellationToken);
             return Results.Ok(result);

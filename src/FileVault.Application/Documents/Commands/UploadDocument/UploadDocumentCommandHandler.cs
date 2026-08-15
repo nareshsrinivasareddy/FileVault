@@ -17,13 +17,12 @@ public sealed class UploadDocumentCommandHandler : IRequestHandler<UploadDocumen
     {
         var provider = _storageProviderFactory.GetProvider(request.PreferredProvider);
 
-        var containerName = "documents";
         var blobName = $"{Guid.NewGuid():N}_{Path.GetFileName(request.FileName)}";
 
         request.FileStream.Position = 0;
 
         var uploadResult = await provider.UploadAsync(
-            containerName,
+            string.Empty,
             blobName,
             request.FileStream,
             request.ContentType,
