@@ -1,7 +1,7 @@
 namespace FileVault.Api.Endpoints;
 
 using FileVault.Application.Documents.Commands.UploadDocument;
-using MediatR;
+using FluentValidation;
 
 public static class DocumentsEndpoint
 {
@@ -9,22 +9,18 @@ public static class DocumentsEndpoint
     {
         var group = endpoints.MapGroup("/api/documents");
 
-        group.MapPost("/upload", async (IFormFile file, ISender sender, CancellationToken cancellationToken) =>
+        group.MapPost("/upload", async (IFormFile file, IValidator<UploadDocumentCommand> validator, UploadDocumentCommandHandler handler, CancellationToken cancellationToken) =>
         {
-            if (file is null || file.Length == 0)
+            await using var stream = file.OpenReadStream();
+            var command = new UploadDocumentCommand(file.FileName, file.ContentType, file.Length, stream, Domain.Enums.StorageProviderType.AzureBlob);
+
+            var validationResult = await validator.ValidateAsync(command, cancellationToken);
+            if (!validationResult.IsValid)
             {
-                return Results.BadRequest("File is required.");
+                return Results.ValidationProblem(validationResult.ToDictionary());
             }
 
-            await using var stream = file.OpenReadStream();
-            var command = new UploadDocumentCommand(
-                file.FileName,
-                file.ContentType,
-                file.Length,
-                stream,
-                Domain.Enums.StorageProviderType.AzureBlob);
-
-            var result = await sender.Send(command, cancellationToken);
+            var result = await handler.UploadAsync(command, cancellationToken);
             return Results.Ok(result);
         })
         .DisableAntiforgery()

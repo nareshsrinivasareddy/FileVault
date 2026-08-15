@@ -16,14 +16,7 @@ public sealed class DocumentFile
 
     private DocumentFile() { }
 
-    public static DocumentFile Create(
-        string fileName,
-        string contentType,
-        long sizeInBytes,
-        string containerName,
-        string blobName,
-        StorageProviderType providerType,
-        string downloadUrl)
+    public static DocumentFile Create(string fileName, string contentType, long sizeInBytes, string containerName, string blobName, StorageProviderType providerType, string downloadUrl)
     {
         return new DocumentFile
         {

@@ -20,12 +20,7 @@ public sealed class AzureBlobStorageProvider : IStorageProvider
 
     public StorageProviderType ProviderType => StorageProviderType.AzureBlob;
 
-    public async Task<StorageUploadResult> UploadAsync(
-        string containerName,
-        string blobName,
-        Stream fileStream,
-        string contentType,
-        CancellationToken cancellationToken)
+    public async Task<StorageUploadResult> UploadAsync(string containerName, string blobName, Stream fileStream, string contentType, CancellationToken cancellationToken)
     {
         var resolvedContainerName = string.IsNullOrWhiteSpace(containerName) ? _options.ContainerName : containerName;
         var containerClient = _blobServiceClient.GetBlobContainerClient(resolvedContainerName);
