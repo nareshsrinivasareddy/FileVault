@@ -25,10 +25,9 @@ public static class DependencyInjection
             throw new InvalidOperationException("Key Vault URI is not configured.");
         }
 
-        //removed credential and secrets need to store in the environment variable and use the default credentials
-        var credential = new ClientSecretCredential("", "", "");
+        var credential = new DefaultAzureCredential();
         services.AddSingleton<TokenCredential>(credential);
-        services.AddSingleton(new SecretClient(new Uri(keyVaultOptions.Uri), new DefaultAzureCredential()));
+        services.AddSingleton(new SecretClient(new Uri(keyVaultOptions.Uri), credential));
 
         services.AddSingleton<ISecretProvider, AzureKeyVaultSecretProvider>();
         services.AddSingleton<IStorageProvider, AzureBlobStorageProvider>();

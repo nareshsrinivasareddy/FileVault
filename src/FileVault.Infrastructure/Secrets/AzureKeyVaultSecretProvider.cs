@@ -19,7 +19,7 @@ public sealed class AzureKeyVaultSecretProvider : ISecretProvider
             throw new ArgumentException("Secret name is required.", nameof(name));
         }
 
-        var response = await _secretClient.GetSecretAsync(name);
+        var response = await _secretClient.GetSecretAsync(name, cancellationToken: cancellationToken);
 
         return response.Value.Value;
     }
